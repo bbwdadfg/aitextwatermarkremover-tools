@@ -1,0 +1,64 @@
+{
+  "target": "https://aitextwatermarkremover.com/",
+  "artifact": {
+    "name": "aitextwatermarkremover-tools",
+    "version": "0.1.0",
+    "source_repo": "https://github.com/bbwdadfg/aitextwatermarkremover-tools",
+    "source_commit": "42a835be8f3bcfd0c6f5dccf81f252f2b5f938ed",
+    "scope": "offline invisible-Unicode scanner/remover, Markdown paste-residue cleaner",
+    "non_goals": ["Pro rewrite", "network requests", "AI detector bypass claims", "official SDK claim"]
+  },
+  "generated_at": "2026-08-17T05:41:04Z",
+  "credential_status": {
+    "github_cli": "available",
+    "pypi_token": "used_ephemerally",
+    "npm_token": "present_but_auth_failed",
+    "other_registries": "not_read"
+  },
+  "cleanup": "No tokens written to repository or records. npm publish used a process-substitution config and failed before upload; no persistent npmrc was created.",
+  "platforms": [
+    {
+      "platform": "GitHub",
+      "status": "verified",
+      "url": "https://github.com/bbwdadfg/aitextwatermarkremover-tools",
+      "evidence": "Public repository HTTP 200; v0.1.0 tag pushed; README and homepage link present."
+    },
+    {
+      "platform": "PyPI",
+      "status": "verified",
+      "url": "https://pypi.org/project/aitextwatermarkremover-tools/",
+      "api_url": "https://pypi.org/pypi/aitextwatermarkremover-tools/json",
+      "evidence": "JSON API reports version 0.1.0; project page and simple index HTTP 200; Homepage and Repository metadata present."
+    },
+    {
+      "platform": "Go proxy",
+      "status": "published",
+      "url": "https://proxy.golang.org/github.com/bbwdadfg/aitextwatermarkremover-tools/@v/v0.1.0.info",
+      "evidence": "Go proxy HTTP 200 and go list resolves v0.1.0.",
+      "caveat": "pkg.go.dev documentation page still returns 404 while indexing; do not call docs page verified yet."
+    },
+    {
+      "platform": "npm",
+      "status": "blocked_credentials",
+      "url": "https://www.npmjs.com/package/aitextwatermarkremover-tools",
+      "evidence": "npm pack --dry-run passed; npm publish stopped with ENEEDAUTH and npm whoami failed."
+    },
+    {"platform": "Packagist", "status": "skipped_not_applicable", "evidence": "No PHP/Composer artifact; do not create a backlink-only package."},
+    {"platform": "crates.io/docs.rs", "status": "skipped_not_applicable", "evidence": "No Rust artifact; crates token absent."},
+    {"platform": "RubyGems", "status": "skipped_not_applicable", "evidence": "No Ruby artifact; RubyGems API key absent."},
+    {"platform": "pub.dev", "status": "skipped_not_applicable", "evidence": "No Dart artifact."},
+    {"platform": "Hex.pm/HexDocs", "status": "skipped_not_applicable", "evidence": "No Elixir artifact."},
+    {"platform": "Clojars", "status": "skipped_not_applicable", "evidence": "No JVM artifact."},
+    {"platform": "Docker Hub", "status": "skipped_not_applicable", "evidence": "No container artifact and docker CLI is unavailable."},
+    {"platform": "JSR", "status": "skipped_not_applicable", "evidence": "No JSR metadata/scope approved; do not duplicate the npm package."},
+    {"platform": "Maven Central/javadoc.io", "status": "skipped_not_applicable", "evidence": "No Java artifact or Central namespace work for this small web helper."},
+    {"platform": "NuGet", "status": "skipped_not_applicable", "evidence": "No .NET artifact."},
+    {"platform": "CocoaPods", "status": "skipped_not_applicable", "evidence": "No Apple native artifact."},
+    {"platform": "LuaRocks", "status": "skipped_not_applicable", "evidence": "No Lua artifact."},
+    {"platform": "CPAN/MetaCPAN", "status": "skipped_not_applicable", "evidence": "No Perl artifact."},
+    {"platform": "Hackage", "status": "skipped_not_applicable", "evidence": "No Haskell artifact."},
+    {"platform": "Chocolatey", "status": "skipped_not_applicable", "evidence": "No Windows installer/CLI package."},
+    {"platform": "GitHub Packages", "status": "skipped_not_applicable", "evidence": "Public npm/PyPI/Go surfaces are sufficient; no separate private-by-default package surface created."},
+    {"platform": "GitLab Package Registry", "status": "skipped_not_applicable", "evidence": "No GitLab source project; do not duplicate the public source repository."}
+  ]
+}
