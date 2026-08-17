@@ -153,13 +153,13 @@
       "platform": "CPAN/MetaCPAN",
       "status": "blocked_credentials",
       "url": "",
-      "evidence": "Local Perl tests and tarball exist. Stored PAUSE credentials still 401. Ego cannot complete https://pause.perl.org/pause/authenquery because the browser hits HTTP Basic auth and lands on chrome-error."
+      "evidence": "PAUSE author BAIWEI exists on MetaCPAN. Keychain cpan-token is stored as USER:secret, but both the full string and the secret part return HTTP 401 on pause.perl.org. The PAUSE password/API token is expired or revoked. Ego cannot complete HTTP Basic login (chrome-error). Need a fresh PAUSE password or API token."
     },
     {
       "platform": "Hackage",
       "status": "blocked_credentials",
       "url": "",
-      "evidence": "Haskell sdist built. Ego can open the upload form while a cookie session exists, but the POST hits HTTP Digest auth and chrome-error. No Hackage token in Keychain."
+      "evidence": "Local cabal sdist exists. No Hackage account matches bbwdadfg/tianwei/baiwei/BAIWEI, and no Hackage token is in Keychain. The public upload form is visible, but the POST requires HTTP Digest auth and Ego lands on chrome-error. Need a Hackage username/password or a new account."
     },
     {
       "platform": "Chocolatey",
@@ -169,10 +169,10 @@
     },
     {
       "platform": "GitHub Packages",
-      "status": "published",
+      "status": "verified",
       "url": "https://github.com/bbwdadfg/aitextwatermarkremover-tools/pkgs/npm/aitextwatermarkremover-tools",
       "package": "@bbwdadfg/aitextwatermarkremover-tools",
-      "evidence": "npm publish to npm.pkg.github.com succeeded for 0.1.0. Public package page remains 404 until visibility is changed from the default private state."
+      "evidence": "Package visibility changed from private to public in GitHub package settings. API reports visibility=public. Unauthenticated package page follows to HTTP 200."
     },
     {
       "platform": "GitLab Package Registry",

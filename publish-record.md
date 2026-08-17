@@ -36,6 +36,8 @@ Source: [bbwdadfg/aitextwatermarkremover-tools](https://github.com/bbwdadfg/aite
   pod trunk info reports AtwrTools 0.1.0. First trunk push returned HTTP 500 after create; retry said duplicate. cocoapods.org/pods/AtwrTools HTTP 200.
 - **LuaRocks** — https://luarocks.org/modules/bbwdadfg/aitextwatermarkremover-tools
   luarocks upload 0.1.0-1 succeeded; rockspec HTTP 200 at https://luarocks.org/manifests/bbwdadfg/aitextwatermarkremover-tools-0.1.0-1.rockspec.
+- **GitHub Packages** — https://github.com/bbwdadfg/aitextwatermarkremover-tools/pkgs/npm/aitextwatermarkremover-tools
+  Package visibility changed from private to public in GitHub package settings. API reports visibility=public. Unauthenticated package page follows to HTTP 200.
 - **GitLab Package Registry** — https://gitlab.com/baiwei.chu/aitextwatermarkremover-tools/-/packages
   Public project 85475708 created. Generic package PUT returned 201. Unauthenticated project, packages page, and artifact URL return HTTP 200. Archive sha256 3d8337c33bdb524ec8535555480462275d1843c74cf3e6f219b1b82de2f7fa91.
 - **Homebrew** — https://github.com/bbwdadfg/homebrew-aitextwatermarkremover-tools
@@ -47,8 +49,6 @@ Source: [bbwdadfg/aitextwatermarkremover-tools](https://github.com/bbwdadfg/aite
 
 - **Maven Central/javadoc.io** — https://central.sonatype.com/publishing/deployments
   central-publishing-maven-plugin uploaded and VALIDATED deployment 52b22a6a-c4f8-4f2d-8eb7-bc0814f5dee8. Publisher API POST returned HTTP 204. repo1 POM still 404 at record time (indexing lag).
-- **GitHub Packages** — https://github.com/bbwdadfg/aitextwatermarkremover-tools/pkgs/npm/aitextwatermarkremover-tools
-  npm publish to npm.pkg.github.com succeeded for 0.1.0. Public package page remains 404 until visibility is changed from the default private state.
 
 ## Submitted / pending review
 
@@ -62,9 +62,9 @@ Source: [bbwdadfg/aitextwatermarkremover-tools](https://github.com/bbwdadfg/aite
 ## Blocked by credentials or platform review
 
 - **CPAN/MetaCPAN**
-  Local Perl tests and tarball exist. Stored PAUSE credentials still 401. Ego cannot complete https://pause.perl.org/pause/authenquery because the browser hits HTTP Basic auth and lands on chrome-error.
+  PAUSE author BAIWEI exists on MetaCPAN. Keychain cpan-token is stored as USER:secret, but both the full string and the secret part return HTTP 401 on pause.perl.org. The PAUSE password/API token is expired or revoked. Ego cannot complete HTTP Basic login (chrome-error). Need a fresh PAUSE password or API token.
 - **Hackage**
-  Haskell sdist built. Ego can open the upload form while a cookie session exists, but the POST hits HTTP Digest auth and chrome-error. No Hackage token in Keychain.
+  Local cabal sdist exists. No Hackage account matches bbwdadfg/tianwei/baiwei/BAIWEI, and no Hackage token is in Keychain. The public upload form is visible, but the POST requires HTTP Digest auth and Ego lands on chrome-error. Need a Hackage username/password or a new account.
 
 ## Permanently excluded
 
