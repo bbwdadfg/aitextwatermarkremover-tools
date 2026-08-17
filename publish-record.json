@@ -68,9 +68,10 @@
     },
     {
       "platform": "crates.io/docs.rs",
-      "status": "blocked_credentials",
-      "url": "",
-      "evidence": "cargo publish --dry-run passed. Live publish returned 403 authentication failed. ~/.cargo/credentials.toml exists but was rejected; Keychain crates-token is absent."
+      "status": "verified",
+      "url": "https://crates.io/crates/aitextwatermarkremover-tools",
+      "docs_url": "https://docs.rs/aitextwatermarkremover-tools",
+      "evidence": "Ego GitHub login on crates.io; new API token stored in Keychain. cargo publish 0.1.0 succeeded. crates.io API and docs.rs return HTTP 200; homepage and repository present."
     },
     {
       "platform": "RubyGems",
@@ -100,21 +101,21 @@
     },
     {
       "platform": "Clojars",
-      "status": "blocked_credentials",
-      "url": "",
-      "evidence": "Local mvn test passed. Deploy to https://repo.clojars.org returned 401 Unauthorized with the stored Clojars user/token."
+      "status": "verified",
+      "url": "https://clojars.org/net.clojars.tianwei/aitextwatermarkremover-tools",
+      "evidence": "Ego GitHub login as tianwei; expired token replaced. mvn deploy 0.1.0 succeeded. Public package page and repo POM return HTTP 200."
     },
     {
       "platform": "Docker Hub",
-      "status": "blocked_credentials",
-      "url": "",
-      "evidence": "No local docker CLI. Hub repository create with the stored PAT as Bearer returned 401 requiring a Hub /v2/auth/token session. Registry image push was not completed."
+      "status": "verified",
+      "url": "https://hub.docker.com/r/baiwei111/aitextwatermarkremover-tools",
+      "evidence": "Ego GitHub login created public repo. New Read&Write PAT stored in Keychain. Registry API pushed tags 0.1.0 and latest. Manifest digest sha256:335d7e0dc390fad2ad13a5209278e17264fd91eb7a978dd8d994dcfdd75c47e8. Tags API HTTP 200."
     },
     {
       "platform": "JSR",
-      "status": "blocked_credentials",
-      "url": "",
-      "evidence": "TypeScript module and jsr.json are in the repo. Keychain jsr-token is missing. First publish also needs jsr.io scope/package approval."
+      "status": "verified",
+      "url": "https://jsr.io/@bbwdadfg/aitextwatermarkremover-tools",
+      "evidence": "Ego GitHub login created package shell @bbwdadfg/aitextwatermarkremover-tools. Token stored in Keychain. jsr publish 0.1.0 succeeded. Public package page HTTP 200."
     },
     {
       "platform": "Maven Central/javadoc.io",
@@ -152,13 +153,13 @@
       "platform": "CPAN/MetaCPAN",
       "status": "blocked_credentials",
       "url": "",
-      "evidence": "Local Perl tests passed and a source tarball was built. cpan-upload to PAUSE returned 401 Unauthorized with stored cpan-user/cpan-token."
+      "evidence": "Local Perl tests and tarball exist. Stored PAUSE credentials still 401. Ego cannot complete https://pause.perl.org/pause/authenquery because the browser hits HTTP Basic auth and lands on chrome-error."
     },
     {
       "platform": "Hackage",
       "status": "blocked_credentials",
       "url": "",
-      "evidence": "Haskell package tests passed locally. Keychain hackage-token is missing. First Hackage upload also commonly needs uploader-group approval."
+      "evidence": "Haskell sdist built. Ego can open the upload form while a cookie session exists, but the POST hits HTTP Digest auth and chrome-error. No Hackage token in Keychain."
     },
     {
       "platform": "Chocolatey",

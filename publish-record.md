@@ -3,9 +3,8 @@ Target: `https://aitextwatermarkremover.com/`
 
 Artifact: `aitextwatermarkremover-tools` `0.1.0`
 
-Source: [bbwdadfg/aitextwatermarkremover-tools](https://github.com/bbwdadfg/aitextwatermarkremover-tools), commit `b8e0c0c4bef76c831b34a29edd3a26d007be37a8`
+Source: [bbwdadfg/aitextwatermarkremover-tools](https://github.com/bbwdadfg/aitextwatermarkremover-tools)
 
-The artifact is an offline helper for scanning/removing invisible Unicode characters and cleaning Markdown paste residue. It is an independent third-party helper, not an official SDK, and makes no detector-bypass guarantee.
 
 ## Verified
 
@@ -19,10 +18,18 @@ The artifact is an offline helper for scanning/removing invisible Unicode charac
   Published 0.1.0; registry metadata has homepage, GitHub repository, and atwr bin. npmjs.com HTML verifier returned HTTP 403.
 - **Packagist** — https://packagist.org/packages/bbwdadfg/aitextwatermarkremover-tools
   create-package returned success; package JSON lists repository and versions including v0.1.1.
+- **crates.io/docs.rs** — https://crates.io/crates/aitextwatermarkremover-tools
+  Ego GitHub login on crates.io; new API token stored in Keychain. cargo publish 0.1.0 succeeded. crates.io API and docs.rs return HTTP 200; homepage and repository present.
 - **RubyGems** — https://rubygems.org/gems/aitextwatermarkremover-tools
   API reports 0.1.0, homepage https://aitextwatermarkremover.com/, source_code_uri GitHub repo.
 - **pub.dev** — https://pub.dev/packages/aitextwatermarkremover_tools
   Published 0.1.0; API reports homepage https://aitextwatermarkremover.com/.
+- **Clojars** — https://clojars.org/net.clojars.tianwei/aitextwatermarkremover-tools
+  Ego GitHub login as tianwei; expired token replaced. mvn deploy 0.1.0 succeeded. Public package page and repo POM return HTTP 200.
+- **Docker Hub** — https://hub.docker.com/r/baiwei111/aitextwatermarkremover-tools
+  Ego GitHub login created public repo. New Read&Write PAT stored in Keychain. Registry API pushed tags 0.1.0 and latest. Manifest digest sha256:335d7e0dc390fad2ad13a5209278e17264fd91eb7a978dd8d994dcfdd75c47e8. Tags API HTTP 200.
+- **JSR** — https://jsr.io/@bbwdadfg/aitextwatermarkremover-tools
+  Ego GitHub login created package shell @bbwdadfg/aitextwatermarkremover-tools. Token stored in Keychain. jsr publish 0.1.0 succeeded. Public package page HTTP 200.
 - **NuGet** — https://www.nuget.org/packages/AtwrTools/0.1.0
   Push returned Created. Package page HTTP 200 contains 0.1.0 and homepage. Flat-container API lists 0.1.0.
 - **CocoaPods** — https://cocoapods.org/pods/AtwrTools
@@ -54,18 +61,10 @@ The artifact is an offline helper for scanning/removing invisible Unicode charac
 
 ## Blocked by credentials or platform review
 
-- **crates.io/docs.rs**
-  cargo publish --dry-run passed. Live publish returned 403 authentication failed. ~/.cargo/credentials.toml exists but was rejected; Keychain crates-token is absent.
-- **Clojars**
-  Local mvn test passed. Deploy to https://repo.clojars.org returned 401 Unauthorized with the stored Clojars user/token.
-- **Docker Hub**
-  No local docker CLI. Hub repository create with the stored PAT as Bearer returned 401 requiring a Hub /v2/auth/token session. Registry image push was not completed.
-- **JSR**
-  TypeScript module and jsr.json are in the repo. Keychain jsr-token is missing. First publish also needs jsr.io scope/package approval.
 - **CPAN/MetaCPAN**
-  Local Perl tests passed and a source tarball was built. cpan-upload to PAUSE returned 401 Unauthorized with stored cpan-user/cpan-token.
+  Local Perl tests and tarball exist. Stored PAUSE credentials still 401. Ego cannot complete https://pause.perl.org/pause/authenquery because the browser hits HTTP Basic auth and lands on chrome-error.
 - **Hackage**
-  Haskell package tests passed locally. Keychain hackage-token is missing. First Hackage upload also commonly needs uploader-group approval.
+  Haskell sdist built. Ego can open the upload form while a cookie session exists, but the POST hits HTTP Digest auth and chrome-error. No Hackage token in Keychain.
 
 ## Permanently excluded
 

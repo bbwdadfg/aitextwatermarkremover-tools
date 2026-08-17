@@ -1,4 +1,11 @@
-const INVISIBLE_NAMES = new Map([
+export interface Finding {
+  index: number;
+  character: string;
+  codePoint: string;
+  name: string;
+}
+
+const INVISIBLE_NAMES: Map<number, string> = new Map([
   [0x00ad, "SOFT HYPHEN"],
   [0x034f, "COMBINING GRAPHEME JOINER"],
   [0x061c, "ARABIC LETTER MARK"],
@@ -46,15 +53,16 @@ const INVISIBLE_NAMES = new Map([
   [0xfeff, "ZERO WIDTH NO-BREAK SPACE"]
 ]);
 
-function codePointLabel(codePoint) {
+function codePointLabel(codePoint: number): string {
   return `U+${codePoint.toString(16).toUpperCase().padStart(4, "0")}`;
 }
 
-export function scanInvisibleCharacters(text) {
-  const findings = [];
+export function scanInvisibleCharacters(text: string): Finding[] {
+  const findings: Finding[] = [];
   let index = 0;
   for (const character of text) {
     const codePoint = character.codePointAt(0);
+    if (codePoint === undefined) continue;
     const name = INVISIBLE_NAMES.get(codePoint);
     if (name) {
       findings.push({ index, character, codePoint: codePointLabel(codePoint), name });
@@ -64,11 +72,14 @@ export function scanInvisibleCharacters(text) {
   return findings;
 }
 
-export function removeInvisibleCharacters(text) {
-  return Array.from(text).filter((character) => !INVISIBLE_NAMES.has(character.codePointAt(0))).join("");
+export function removeInvisibleCharacters(text: string): string {
+  return Array.from(text).filter((character) => {
+    const codePoint = character.codePointAt(0);
+    return codePoint === undefined || !INVISIBLE_NAMES.has(codePoint);
+  }).join("");
 }
 
-export function stripMarkdownPasteResidue(text) {
+export function stripMarkdownPasteResidue(text: string): string {
   return text
     .replace(/^\s{0,3}(?:#{1,6}|[-*+] |\d+\. |>)\s?/gm, "")
     .replace(/\\([\\`*_{}\[\]()#+.!|>~-])/g, "$1")
