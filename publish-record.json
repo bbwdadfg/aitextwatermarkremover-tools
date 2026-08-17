@@ -32,10 +32,10 @@
     },
     {
       "platform": "Go proxy",
-      "status": "published",
+      "status": "verified",
       "url": "https://proxy.golang.org/github.com/bbwdadfg/aitextwatermarkremover-tools/@v/v0.1.0.info",
-      "evidence": "Go proxy HTTP 200 and go list resolves v0.1.0.",
-      "caveat": "pkg.go.dev documentation page still returns 404 while indexing; do not call docs page verified yet."
+      "docs_url": "https://pkg.go.dev/github.com/bbwdadfg/aitextwatermarkremover-tools@v0.1.0",
+      "evidence": "Go proxy HTTP 200, go list resolves v0.1.0, and pkg.go.dev documentation page follows to HTTP 200."
     },
     {
       "platform": "npm",

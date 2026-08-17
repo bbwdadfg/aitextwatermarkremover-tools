@@ -12,9 +12,7 @@ The artifact is an offline helper for scanning/removing invisible Unicode charac
 
 - [GitHub repository](https://github.com/bbwdadfg/aitextwatermarkremover-tools) — public repo and `v0.1.0` tag.
 - [PyPI project](https://pypi.org/project/aitextwatermarkremover-tools/) — version `0.1.0`; JSON API, project page, and simple index verified.
-- [Go proxy module](https://proxy.golang.org/github.com/bbwdadfg/aitextwatermarkremover-tools/@v/v0.1.0.info) — version resolves through `go list`.
-
-`pkg.go.dev` is still indexing and is not counted as verified.
+- [Go proxy module](https://proxy.golang.org/github.com/bbwdadfg/aitextwatermarkremover-tools/@v/v0.1.0.info) — version resolves through `go list`; [pkg.go.dev documentation](https://pkg.go.dev/github.com/bbwdadfg/aitextwatermarkremover-tools@v0.1.0) now returns HTTP 200.
 
 ## Blocked
 
