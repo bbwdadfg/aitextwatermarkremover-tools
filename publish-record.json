@@ -8,7 +8,7 @@
     "scope": "offline invisible-Unicode scanner/remover, Markdown paste-residue cleaner",
     "non_goals": ["Pro rewrite", "network requests", "AI detector bypass claims", "official SDK claim"]
   },
-  "generated_at": "2026-08-17T12:32:00Z",
+  "generated_at": "2026-08-17T13:35:00Z",
   "credential_status": {
     "github_cli": "available",
     "pypi_token": "used_ephemerally",
@@ -24,11 +24,11 @@
     "cocoapods_token": "used_as_github_actions_secret",
     "openvsx_token": "used_ephemerally",
     "hex_account": "removed_by_platform_for_spam",
-    "crates_credentials": "present_but_rejected_403",
-    "clojars_token": "present_but_rejected_401",
-    "cpan_token": "present_but_rejected_401",
-    "jsr_token": "missing",
-    "hackage_token": "missing"
+    "crates_credentials": "stored_and_used",
+    "clojars_token": "stored_and_used",
+    "cpan_token": "stored_and_used",
+    "jsr_token": "stored_and_used",
+    "hackage_token": "stored_account_pending_uploaders"
   },
   "cleanup": "No tokens written to the repository or records. Temporary Maven/Clojars settings, npmrc, and PAUSE config files were deleted after use.",
   "platforms": [
@@ -151,15 +151,17 @@
     },
     {
       "platform": "CPAN/MetaCPAN",
-      "status": "blocked_credentials",
-      "url": "",
-      "evidence": "PAUSE author BAIWEI exists on MetaCPAN. Keychain cpan-token is stored as USER:secret, but both the full string and the secret part return HTTP 401 on pause.perl.org. The PAUSE password/API token is expired or revoked. Ego cannot complete HTTP Basic login (chrome-error). Need a fresh PAUSE password or API token."
+      "status": "verified",
+      "url": "https://metacpan.org/release/BAIWEI/AtwrTools-0.1.0",
+      "package": "AtwrTools",
+      "evidence": "PAUSE password reset via mailpw; Keychain cpan-user/cpan-token now authenticate HTTP 200. cpan-upload AtwrTools-0.1.0.tar.gz returned 200. Public tarball HTTP 200 on cpan.metacpan.org and www.cpan.org. MetaCPAN release page and fastapi release document HTTP 200. PAUSE indexer report received for BAIWEI/AtwrTools-0.1.0.tar.gz."
     },
     {
       "platform": "Hackage",
-      "status": "blocked_credentials",
-      "url": "",
-      "evidence": "Local cabal sdist exists. No Hackage account matches bbwdadfg/tianwei/baiwei/BAIWEI, and no Hackage token is in Keychain. The public upload form is visible, but the POST requires HTTP Digest auth and Ego lands on chrome-error. Need a Hackage username/password or a new account."
+      "status": "blocked_review",
+      "url": "https://hackage.haskell.org/user/BaiWei",
+      "package": "aitextwatermarkremover-tools",
+      "evidence": "Ego registered account BaiWei and confirmed the email. Password stored in Keychain as hackage-user/hackage-token. HTTP Digest auth succeeds. cabal sdist upload returned 403: not in the uploaders group. Trustee request emailed to hackage-trustees@haskell.org. Endorse URL https://hackage.haskell.org/user/BaiWei/endorse."
     },
     {
       "platform": "Chocolatey",

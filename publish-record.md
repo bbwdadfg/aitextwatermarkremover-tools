@@ -44,6 +44,8 @@ Source: [bbwdadfg/aitextwatermarkremover-tools](https://github.com/bbwdadfg/aite
   Public tap Formula is live. brew tap, brew trust --formula, brew install, and `atwr --help` succeeded locally.
 - **Open VSX** — https://open-vsx.org/extension/bbwdadfg/aitextwatermarkremover-tools
   ovsx publish succeeded for bbwdadfg.aitextwatermarkremover-tools 0.1.0. Public extension page returns HTTP 200.
+- **CPAN/MetaCPAN** — https://metacpan.org/release/BAIWEI/AtwrTools-0.1.0
+  PAUSE password reset via mailpw; Keychain cpan-user/cpan-token now authenticate HTTP 200. cpan-upload AtwrTools-0.1.0.tar.gz returned 200. Public tarball HTTP 200 on cpan.metacpan.org and www.cpan.org. MetaCPAN release page and API HTTP 200. PAUSE indexer report received.
 
 ## Published, still indexing
 
@@ -59,12 +61,10 @@ Source: [bbwdadfg/aitextwatermarkremover-tools](https://github.com/bbwdadfg/aite
 - **Chocolatey** — https://community.chocolatey.org/packages/aitextwatermarkremover-tools
   nuget push to push.chocolatey.org returned Created. Community package page is live and still in pending automated review.
 
-## Blocked by credentials or platform review
+## Blocked by platform review
 
-- **CPAN/MetaCPAN**
-  PAUSE author BAIWEI exists on MetaCPAN. Keychain cpan-token is stored as USER:secret, but both the full string and the secret part return HTTP 401 on pause.perl.org. The PAUSE password/API token is expired or revoked. Ego cannot complete HTTP Basic login (chrome-error). Need a fresh PAUSE password or API token.
-- **Hackage**
-  Local cabal sdist exists. No Hackage account matches bbwdadfg/tianwei/baiwei/BAIWEI, and no Hackage token is in Keychain. The public upload form is visible, but the POST requires HTTP Digest auth and Ego lands on chrome-error. Need a Hackage username/password or a new account.
+- **Hackage** — https://hackage.haskell.org/user/BaiWei
+  Ego registered account BaiWei, confirmed the email, and stored the password in Keychain. HTTP Digest auth succeeds. sdist upload returned 403 because the account is not in the uploaders group. Trustee request emailed to hackage-trustees@haskell.org. Endorse URL: https://hackage.haskell.org/user/BaiWei/endorse.
 
 ## Permanently excluded
 
