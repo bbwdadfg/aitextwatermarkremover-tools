@@ -1,6 +1,8 @@
 .git/
 .github/
 .dart_tool/
+.build/
+.swiftpm/
 doc/
 dist/
 docker/
@@ -16,6 +18,10 @@ lua/
 haskell/
 cmd/
 open-vsx/
+npm/
+python/
+Sources/
+Tests/
 *.crate
 *.egg-info/
 *.gem
@@ -24,17 +30,17 @@ open-vsx/
 *.tgz
 *.whl
 *.nupkg
+*.rock
 __pycache__/
 Cargo.toml
 Cargo.lock
 aitextwatermarkremover-tools.gemspec
 aitextwatermarkremover-tools-0.1.0-1.rockspec
+aitextwatermarkremover-tools-0.1.0-1.src.rock
 composer.json
 Dockerfile
 .dockerignore
 go.mod
-npm/
-python/
 Package.swift
 AtwrTools.podspec
 jsr.json
@@ -47,4 +53,6 @@ publish-record.csv
 publish-record.md
 clojars-pom.xml
 pom.xml
-cmd/
+atwrtools.go
+atwrtools_test.go
+lib/atwr_tools.rb

@@ -4,61 +4,192 @@
     "name": "aitextwatermarkremover-tools",
     "version": "0.1.0",
     "source_repo": "https://github.com/bbwdadfg/aitextwatermarkremover-tools",
-    "source_commit": "42a835be8f3bcfd0c6f5dccf81f252f2b5f938ed",
+    "source_commit": "b8e0c0c4bef76c831b34a29edd3a26d007be37a8",
     "scope": "offline invisible-Unicode scanner/remover, Markdown paste-residue cleaner",
     "non_goals": ["Pro rewrite", "network requests", "AI detector bypass claims", "official SDK claim"]
   },
-  "generated_at": "2026-08-17T05:41:04Z",
+  "generated_at": "2026-08-17T12:32:00Z",
   "credential_status": {
     "github_cli": "available",
     "pypi_token": "used_ephemerally",
-    "npm_token": "present_but_auth_failed",
-    "other_registries": "not_read"
+    "npm_token": "used_ephemerally",
+    "packagist_token": "used_ephemerally",
+    "nuget_token": "used_ephemerally",
+    "luarocks_api_key": "used_ephemerally",
+    "github_packages_token": "used_ephemerally",
+    "gitlab_token": "used_ephemerally",
+    "chocolatey_api_key": "used_ephemerally",
+    "maven_central_token": "used_ephemerally",
+    "maven_gpg_passphrase": "used_ephemerally",
+    "cocoapods_token": "used_as_github_actions_secret",
+    "openvsx_token": "used_ephemerally",
+    "hex_account": "removed_by_platform_for_spam",
+    "crates_credentials": "present_but_rejected_403",
+    "clojars_token": "present_but_rejected_401",
+    "cpan_token": "present_but_rejected_401",
+    "jsr_token": "missing",
+    "hackage_token": "missing"
   },
-  "cleanup": "No tokens written to repository or records. npm publish used a process-substitution config and failed before upload; no persistent npmrc was created.",
+  "cleanup": "No tokens written to the repository or records. Temporary Maven/Clojars settings, npmrc, and PAUSE config files were deleted after use.",
   "platforms": [
     {
       "platform": "GitHub",
       "status": "verified",
       "url": "https://github.com/bbwdadfg/aitextwatermarkremover-tools",
-      "evidence": "Public repository HTTP 200; v0.1.0 tag pushed; README and homepage link present."
+      "evidence": "Public repository HTTP 200; tags v0.1.0, v0.1.1, luarocks-v0.1.0, cocoapods-v0.1.0, maven-v0.1.0, homebrew-v0.1.0."
     },
     {
       "platform": "PyPI",
       "status": "verified",
       "url": "https://pypi.org/project/aitextwatermarkremover-tools/",
       "api_url": "https://pypi.org/pypi/aitextwatermarkremover-tools/json",
-      "evidence": "JSON API reports version 0.1.0; project page and simple index HTTP 200; Homepage and Repository metadata present."
+      "evidence": "JSON API reports version 0.1.0; project page and simple index HTTP 200."
     },
     {
       "platform": "Go proxy",
       "status": "verified",
-      "url": "https://proxy.golang.org/github.com/bbwdadfg/aitextwatermarkremover-tools/@v/v0.1.0.info",
-      "docs_url": "https://pkg.go.dev/github.com/bbwdadfg/aitextwatermarkremover-tools@v0.1.0",
-      "evidence": "Go proxy HTTP 200, go list resolves v0.1.0, and pkg.go.dev documentation page follows to HTTP 200."
+      "url": "https://proxy.golang.org/github.com/bbwdadfg/aitextwatermarkremover-tools/@v/v0.1.1.info",
+      "docs_url": "https://pkg.go.dev/github.com/bbwdadfg/aitextwatermarkremover-tools@v0.1.1",
+      "evidence": "Go proxy resolves v0.1.0 and v0.1.1; pkg.go.dev documentation page follows to HTTP 200."
     },
     {
       "platform": "npm",
-      "status": "blocked_credentials",
+      "status": "verified",
       "url": "https://www.npmjs.com/package/aitextwatermarkremover-tools",
-      "evidence": "npm pack --dry-run passed; npm publish stopped with ENEEDAUTH and npm whoami failed."
+      "registry_url": "https://registry.npmjs.org/aitextwatermarkremover-tools",
+      "evidence": "Published 0.1.0; registry metadata has homepage, GitHub repository, and atwr bin. npmjs.com HTML verifier returned HTTP 403."
     },
-    {"platform": "Packagist", "status": "skipped_not_applicable", "evidence": "No PHP/Composer artifact; do not create a backlink-only package."},
-    {"platform": "crates.io/docs.rs", "status": "skipped_not_applicable", "evidence": "No Rust artifact; crates token absent."},
-    {"platform": "RubyGems", "status": "skipped_not_applicable", "evidence": "No Ruby artifact; RubyGems API key absent."},
-    {"platform": "pub.dev", "status": "skipped_not_applicable", "evidence": "No Dart artifact."},
-    {"platform": "Hex.pm/HexDocs", "status": "skipped_not_applicable", "evidence": "No Elixir artifact."},
-    {"platform": "Clojars", "status": "skipped_not_applicable", "evidence": "No JVM artifact."},
-    {"platform": "Docker Hub", "status": "skipped_not_applicable", "evidence": "No container artifact and docker CLI is unavailable."},
-    {"platform": "JSR", "status": "skipped_not_applicable", "evidence": "No JSR metadata/scope approved; do not duplicate the npm package."},
-    {"platform": "Maven Central/javadoc.io", "status": "skipped_not_applicable", "evidence": "No Java artifact or Central namespace work for this small web helper."},
-    {"platform": "NuGet", "status": "skipped_not_applicable", "evidence": "No .NET artifact."},
-    {"platform": "CocoaPods", "status": "skipped_not_applicable", "evidence": "No Apple native artifact."},
-    {"platform": "LuaRocks", "status": "skipped_not_applicable", "evidence": "No Lua artifact."},
-    {"platform": "CPAN/MetaCPAN", "status": "skipped_not_applicable", "evidence": "No Perl artifact."},
-    {"platform": "Hackage", "status": "skipped_not_applicable", "evidence": "No Haskell artifact."},
-    {"platform": "Chocolatey", "status": "skipped_not_applicable", "evidence": "No Windows installer/CLI package."},
-    {"platform": "GitHub Packages", "status": "skipped_not_applicable", "evidence": "Public npm/PyPI/Go surfaces are sufficient; no separate private-by-default package surface created."},
-    {"platform": "GitLab Package Registry", "status": "skipped_not_applicable", "evidence": "No GitLab source project; do not duplicate the public source repository."}
+    {
+      "platform": "Packagist",
+      "status": "verified",
+      "url": "https://packagist.org/packages/bbwdadfg/aitextwatermarkremover-tools",
+      "api_url": "https://packagist.org/packages/bbwdadfg/aitextwatermarkremover-tools.json",
+      "evidence": "create-package returned success; package JSON lists repository and versions including v0.1.1."
+    },
+    {
+      "platform": "crates.io/docs.rs",
+      "status": "blocked_credentials",
+      "url": "",
+      "evidence": "cargo publish --dry-run passed. Live publish returned 403 authentication failed. ~/.cargo/credentials.toml exists but was rejected; Keychain crates-token is absent."
+    },
+    {
+      "platform": "RubyGems",
+      "status": "verified",
+      "url": "https://rubygems.org/gems/aitextwatermarkremover-tools",
+      "api_url": "https://rubygems.org/api/v1/gems/aitextwatermarkremover-tools.json",
+      "evidence": "API reports 0.1.0, homepage https://aitextwatermarkremover.com/, source_code_uri GitHub repo."
+    },
+    {
+      "platform": "RubyDoc.info",
+      "status": "submitted",
+      "url": "https://www.rubydoc.info/gems/aitextwatermarkremover-tools",
+      "evidence": "Ruby gem is public. RubyDoc project/version pages still return HTTP 404 while indexing."
+    },
+    {
+      "platform": "pub.dev",
+      "status": "verified",
+      "url": "https://pub.dev/packages/aitextwatermarkremover_tools",
+      "api_url": "https://pub.dev/api/packages/aitextwatermarkremover_tools",
+      "evidence": "Published 0.1.0; API reports homepage https://aitextwatermarkremover.com/."
+    },
+    {
+      "platform": "Hex.pm/HexDocs",
+      "status": "skipped_policy",
+      "url": "",
+      "evidence": "User-provided Hex.pm notice says account bbwdadfg and its sole-owner packages were removed for spam; do not retry, create an alternate account, or republish there."
+    },
+    {
+      "platform": "Clojars",
+      "status": "blocked_credentials",
+      "url": "",
+      "evidence": "Local mvn test passed. Deploy to https://repo.clojars.org returned 401 Unauthorized with the stored Clojars user/token."
+    },
+    {
+      "platform": "Docker Hub",
+      "status": "blocked_credentials",
+      "url": "",
+      "evidence": "No local docker CLI. Hub repository create with the stored PAT as Bearer returned 401 requiring a Hub /v2/auth/token session. Registry image push was not completed."
+    },
+    {
+      "platform": "JSR",
+      "status": "blocked_credentials",
+      "url": "",
+      "evidence": "TypeScript module and jsr.json are in the repo. Keychain jsr-token is missing. First publish also needs jsr.io scope/package approval."
+    },
+    {
+      "platform": "Maven Central/javadoc.io",
+      "status": "published",
+      "url": "https://central.sonatype.com/publishing/deployments",
+      "package": "io.github.bbwdadfg:aitextwatermarkremover-tools:0.1.0",
+      "evidence": "central-publishing-maven-plugin uploaded and VALIDATED deployment 52b22a6a-c4f8-4f2d-8eb7-bc0814f5dee8. Publisher API POST returned HTTP 204. repo1 POM still 404 at record time (indexing lag)."
+    },
+    {
+      "platform": "NuGet",
+      "status": "verified",
+      "url": "https://www.nuget.org/packages/AtwrTools/0.1.0",
+      "api_url": "https://api.nuget.org/v3-flatcontainer/atwrtools/index.json",
+      "evidence": "Push returned Created. Package page HTTP 200 contains 0.1.0 and homepage. Flat-container API lists 0.1.0."
+    },
+    {
+      "platform": "CocoaPods",
+      "status": "blocked_review",
+      "url": "https://github.com/bbwdadfg/aitextwatermarkremover-tools/actions/runs/32029910900",
+      "evidence": "pod spec lint succeeded on GitHub Actions macos-latest. trunk.cocoapods.org returned HTTP 500 internal server error. Retry queued as run 32030231151."
+    },
+    {
+      "platform": "Swift Package Registry",
+      "status": "submitted",
+      "url": "https://github.com/bbwdadfg/aitextwatermarkremover-tools",
+      "evidence": "Public Package.swift and AtwrTools sources are on GitHub. swift package dump-package succeeded. Public swiftpackageregistry.com index page was not confirmed in this run."
+    },
+    {
+      "platform": "LuaRocks",
+      "status": "verified",
+      "url": "https://luarocks.org/modules/bbwdadfg/aitextwatermarkremover-tools",
+      "evidence": "luarocks upload 0.1.0-1 succeeded; rockspec HTTP 200 at https://luarocks.org/manifests/bbwdadfg/aitextwatermarkremover-tools-0.1.0-1.rockspec."
+    },
+    {
+      "platform": "CPAN/MetaCPAN",
+      "status": "blocked_credentials",
+      "url": "",
+      "evidence": "Local Perl tests passed and a source tarball was built. cpan-upload to PAUSE returned 401 Unauthorized with stored cpan-user/cpan-token."
+    },
+    {
+      "platform": "Hackage",
+      "status": "blocked_credentials",
+      "url": "",
+      "evidence": "Haskell package tests passed locally. Keychain hackage-token is missing. First Hackage upload also commonly needs uploader-group approval."
+    },
+    {
+      "platform": "Chocolatey",
+      "status": "submitted",
+      "url": "https://community.chocolatey.org/packages/aitextwatermarkremover-tools",
+      "evidence": "nuget push to push.chocolatey.org returned Created. Community package page is live and still in pending automated review."
+    },
+    {
+      "platform": "GitHub Packages",
+      "status": "published",
+      "url": "https://github.com/bbwdadfg/aitextwatermarkremover-tools/pkgs/npm/aitextwatermarkremover-tools",
+      "package": "@bbwdadfg/aitextwatermarkremover-tools",
+      "evidence": "npm publish to npm.pkg.github.com succeeded for 0.1.0. Public package page remains 404 until visibility is changed from the default private state."
+    },
+    {
+      "platform": "GitLab Package Registry",
+      "status": "verified",
+      "url": "https://gitlab.com/baiwei.chu/aitextwatermarkremover-tools/-/packages",
+      "evidence": "Public project 85475708 created. Generic package PUT returned 201. Unauthenticated project, packages page, and artifact URL return HTTP 200. Archive sha256 3d8337c33bdb524ec8535555480462275d1843c74cf3e6f219b1b82de2f7fa91."
+    },
+    {
+      "platform": "Homebrew",
+      "status": "verified",
+      "url": "https://github.com/bbwdadfg/homebrew-aitextwatermarkremover-tools",
+      "evidence": "Public tap Formula is live. brew tap, brew trust --formula, brew install, and `atwr --help` succeeded locally."
+    },
+    {
+      "platform": "Open VSX",
+      "status": "verified",
+      "url": "https://open-vsx.org/extension/bbwdadfg/aitextwatermarkremover-tools",
+      "evidence": "ovsx publish succeeded for bbwdadfg.aitextwatermarkremover-tools 0.1.0. Public extension page returns HTTP 200."
+    }
   ]
 }
