@@ -14,3 +14,10 @@ func TestRemoveInvisibleCharacters(t *testing.T) {
 		t.Fatalf("got %q", got)
 	}
 }
+
+func TestStripMarkdownPasteResidue(t *testing.T) {
+	got := StripMarkdownPasteResidue("## Heading\n- **Item**\n\\[link\\]")
+	if got != "Heading\nItem\n[link]" {
+		t.Fatalf("got %q", got)
+	}
+}

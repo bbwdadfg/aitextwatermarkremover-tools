@@ -1,0 +1,20 @@
+[package]
+name = "aitextwatermarkremover-tools"
+version = "0.1.0"
+edition = "2021"
+description = "Local utilities to scan and remove invisible Unicode characters and tidy Markdown paste residue. Independent third-party helper inspired by aitextwatermarkremover.com. Not an official SDK. Runs offline."
+license = "MIT"
+homepage = "https://aitextwatermarkremover.com/"
+repository = "https://github.com/bbwdadfg/aitextwatermarkremover-tools"
+documentation = "https://docs.rs/aitextwatermarkremover-tools"
+readme = "README.md"
+keywords = ["unicode", "text", "markdown", "cli"]
+categories = ["text-processing", "command-line-utilities"]
+include = ["Cargo.toml", "README.md", "LICENSE", "rust/src/lib.rs"]
+
+[lib]
+name = "aitextwatermarkremover_tools"
+path = "rust/src/lib.rs"
+
+[dependencies]
+regex = "1"

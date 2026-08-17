@@ -1,0 +1,24 @@
+{
+  "name": "@bbwdadfg/aitextwatermarkremover-tools",
+  "version": "0.1.0",
+  "description": "Local utilities to scan and remove invisible Unicode characters and tidy Markdown paste residue. Independent third-party helper inspired by aitextwatermarkremover.com. Not an official SDK. Runs offline.",
+  "homepage": "https://aitextwatermarkremover.com/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bbwdadfg/aitextwatermarkremover-tools.git"
+  },
+  "license": "MIT",
+  "type": "module",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "scripts": {
+    "test": "node --test test.js"
+  }
+}

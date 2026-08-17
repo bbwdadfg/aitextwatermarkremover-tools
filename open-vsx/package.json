@@ -1,0 +1,41 @@
+{
+  "name": "aitextwatermarkremover-tools",
+  "displayName": "ATWR Invisible Character Tools",
+  "description": "Scan and remove invisible Unicode characters from text. Independent third-party helper inspired by aitextwatermarkremover.com.",
+  "version": "0.1.0",
+  "publisher": "bbwdadfg",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "homepage": "https://aitextwatermarkremover.com/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bbwdadfg/aitextwatermarkremover-tools"
+  },
+  "activationEvents": [
+    "onCommand:atwr.scan",
+    "onCommand:atwr.clean",
+    "onCommand:atwr.tidy"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "atwr.scan",
+        "title": "ATWR: Scan invisible characters"
+      },
+      {
+        "command": "atwr.clean",
+        "title": "ATWR: Remove invisible characters"
+      },
+      {
+        "command": "atwr.tidy",
+        "title": "ATWR: Tidy Markdown paste residue"
+      }
+    ]
+  }
+}

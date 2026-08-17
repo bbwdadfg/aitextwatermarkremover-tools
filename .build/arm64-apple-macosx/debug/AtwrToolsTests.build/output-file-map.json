@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/baiwei/orca/workspaces/50_工作流/aitextwatermarkremover外链发布/外链发布 skill/包生态外链发布（publish-package-backlinks）/runs/aitextwatermarkremover-tools/.build/arm64-apple-macosx/debug/AtwrToolsTests.build/master.swiftdeps"
+  },
+  "/Users/baiwei/orca/workspaces/50_工作流/aitextwatermarkremover外链发布/外链发布 skill/包生态外链发布（publish-package-backlinks）/runs/aitextwatermarkremover-tools/Tests/AtwrToolsTests/AtwrToolsTests.swift": {
+    "dependencies": "/Users/baiwei/orca/workspaces/50_工作流/aitextwatermarkremover外链发布/外链发布 skill/包生态外链发布（publish-package-backlinks）/runs/aitextwatermarkremover-tools/.build/arm64-apple-macosx/debug/AtwrToolsTests.build/AtwrToolsTests.d",
+    "object": "/Users/baiwei/orca/workspaces/50_工作流/aitextwatermarkremover外链发布/外链发布 skill/包生态外链发布（publish-package-backlinks）/runs/aitextwatermarkremover-tools/.build/arm64-apple-macosx/debug/AtwrToolsTests.build/AtwrToolsTests.swift.o",
+    "swiftmodule": "/Users/baiwei/orca/workspaces/50_工作流/aitextwatermarkremover外链发布/外链发布 skill/包生态外链发布（publish-package-backlinks）/runs/aitextwatermarkremover-tools/.build/arm64-apple-macosx/debug/AtwrToolsTests.build/AtwrToolsTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/baiwei/orca/workspaces/50_工作流/aitextwatermarkremover外链发布/外链发布 skill/包生态外链发布（publish-package-backlinks）/runs/aitextwatermarkremover-tools/.build/arm64-apple-macosx/debug/AtwrToolsTests.build/AtwrToolsTests.swiftdeps"
+  }
+}

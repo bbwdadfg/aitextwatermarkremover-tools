@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PackageId>AtwrTools</PackageId>
+    <Version>0.1.0</Version>
+    <Authors>bbwdadfg</Authors>
+    <Description>Local utilities to scan and remove invisible Unicode characters and tidy Markdown paste residue. Independent third-party helper inspired by aitextwatermarkremover.com. Not an official SDK. Runs offline.</Description>
+    <PackageTags>unicode;text;markdown;invisible-characters</PackageTags>
+    <PackageProjectUrl>https://aitextwatermarkremover.com/</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/bbwdadfg/aitextwatermarkremover-tools</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="../../README.md" Pack="true" PackagePath="/" />
+  </ItemGroup>
+</Project>

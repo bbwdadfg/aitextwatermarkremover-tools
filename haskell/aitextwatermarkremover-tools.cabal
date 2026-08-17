@@ -1,0 +1,32 @@
+cabal-version:      3.0
+name:               aitextwatermarkremover-tools
+version:            0.1.0.0
+synopsis:           Scan and remove invisible Unicode characters from text.
+description:        Local utilities to scan and remove invisible Unicode characters and tidy Markdown paste residue. Independent third-party helper inspired by aitextwatermarkremover.com. Not an official SDK. Runs offline.
+license:            MIT
+license-file:       LICENSE
+author:             bbwdadfg
+maintainer:         bbwdadfg@users.noreply.github.com
+homepage:           https://aitextwatermarkremover.com/
+bug-reports:        https://github.com/bbwdadfg/aitextwatermarkremover-tools/issues
+category:           Text
+build-type:         Simple
+extra-source-files: README.md
+
+source-repository head
+  type:     git
+  location: https://github.com/bbwdadfg/aitextwatermarkremover-tools
+
+library
+  exposed-modules:  AtwrTools
+  hs-source-dirs:   src
+  default-language: Haskell2010
+  build-depends:    base >=4.14 && <5, text
+  ghc-options:      -Wall
+
+test-suite aitextwatermarkremover-tools-test
+  type:             exitcode-stdio-1.0
+  main-is:          Spec.hs
+  hs-source-dirs:   test
+  default-language: Haskell2010
+  build-depends:    base >=4.14 && <5, text, aitextwatermarkremover-tools

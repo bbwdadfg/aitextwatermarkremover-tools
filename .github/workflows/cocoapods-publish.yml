@@ -1,0 +1,24 @@
+name: Publish CocoaPods
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - "cocoapods-v*"
+
+jobs:
+  publish:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+      - name: Install CocoaPods
+        run: gem install cocoapods
+      - name: Validate podspec
+        run: pod spec lint AtwrTools.podspec --allow-warnings --verbose
+      - name: Publish pod
+        env:
+          COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
+        run: pod trunk push AtwrTools.podspec --allow-warnings --verbose

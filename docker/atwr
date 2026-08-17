@@ -1,0 +1,22 @@
+#!/bin/sh
+set -eu
+python3 - "$@" <<'PY'
+import json, sys
+from pathlib import Path
+sys.path.insert(0, "/opt/atwr/python/src")
+from atwrtools import remove_invisible_characters, scan_invisible_characters, strip_markdown_paste_residue
+args = sys.argv[1:]
+if not args or args[0] in ("-h", "--help"):
+    print("Usage: atwr scan|clean|tidy [file...]")
+    raise SystemExit(0)
+command, files = args[0], args[1:]
+text = "".join(Path(item).read_text(encoding="utf-8") for item in files) if files else sys.stdin.read()
+if command == "scan":
+    print(json.dumps(scan_invisible_characters(text), ensure_ascii=False, indent=2))
+elif command == "clean":
+    sys.stdout.write(remove_invisible_characters(text))
+elif command == "tidy":
+    sys.stdout.write(strip_markdown_paste_residue(text))
+else:
+    raise SystemExit("Unknown command: " + command)
+PY

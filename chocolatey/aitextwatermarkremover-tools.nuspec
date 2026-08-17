@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+  <metadata>
+    <id>aitextwatermarkremover-tools</id>
+    <version>0.1.0</version>
+    <title>ATWR Tools</title>
+    <authors>bbwdadfg</authors>
+    <projectUrl>https://aitextwatermarkremover.com/</projectUrl>
+    <licenseUrl>https://opensource.org/license/mit/</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Local utilities to scan and remove invisible Unicode characters and tidy Markdown paste residue. Independent third-party helper inspired by aitextwatermarkremover.com. Not an official SDK. Runs offline.</description>
+    <summary>Scan and remove invisible Unicode characters from text.</summary>
+    <tags>unicode text markdown invisible-characters cli</tags>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="README.md" target="README.md" />
+    <file src="LICENSE.txt" target="LICENSE.txt" />
+  </files>
+</package>

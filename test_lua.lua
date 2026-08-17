@@ -1,0 +1,8 @@
+local tools = require("lua.atwr_tools")
+local findings = tools.scan_invisible_characters("A\u{200B}\u{202F}B")
+assert(#findings == 2, "scan count")
+assert(findings[1].codePoint == "U+200B", findings[1].codePoint)
+assert(findings[1].index == 1, tostring(findings[1].index))
+assert(tools.remove_invisible_characters("A\u{200B} B\u{FEFF}") == "A B")
+assert(tools.strip_markdown_paste_residue("## Heading\n- **Item**\n\\[link\\]") == "Heading\nItem\n[link]")
+print("lua tests ok")

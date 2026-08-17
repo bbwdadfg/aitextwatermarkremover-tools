@@ -1,0 +1,26 @@
+{
+  "name": "bbwdadfg/aitextwatermarkremover-tools",
+  "description": "Local utilities to scan and remove invisible Unicode characters and tidy Markdown paste residue. Independent third-party helper inspired by aitextwatermarkremover.com. Not an official SDK. Runs offline.",
+  "type": "library",
+  "license": "MIT",
+  "homepage": "https://aitextwatermarkremover.com/",
+  "keywords": [
+    "unicode",
+    "text",
+    "markdown",
+    "cli",
+    "invisible-characters"
+  ],
+  "support": {
+    "source": "https://github.com/bbwdadfg/aitextwatermarkremover-tools",
+    "issues": "https://github.com/bbwdadfg/aitextwatermarkremover-tools/issues"
+  },
+  "autoload": {
+    "psr-4": {
+      "Atwr\\": "php/src/"
+    }
+  },
+  "require": {
+    "php": ">=8.0"
+  }
+}
