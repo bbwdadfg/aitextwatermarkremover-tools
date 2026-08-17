@@ -1,0 +1,26 @@
+{
+  "name": "aitextwatermarkremover-tools",
+  "version": "0.1.0",
+  "description": "Local CLI to scan and remove invisible Unicode characters from text. Independent third-party helper, not an official SDK. No network requests.",
+  "type": "module",
+  "license": "MIT",
+  "homepage": "https://aitextwatermarkremover.com/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bbwdadfg/aitextwatermarkremover-tools.git",
+    "directory": "npm"
+  },
+  "bin": {
+    "atwr": "bin/atwr.js"
+  },
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "files": ["bin", "src", "README.md", "LICENSE"],
+  "scripts": {
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
