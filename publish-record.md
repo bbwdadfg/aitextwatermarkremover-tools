@@ -25,6 +25,8 @@ The artifact is an offline helper for scanning/removing invisible Unicode charac
   Published 0.1.0; API reports homepage https://aitextwatermarkremover.com/.
 - **NuGet** — https://www.nuget.org/packages/AtwrTools/0.1.0
   Push returned Created. Package page HTTP 200 contains 0.1.0 and homepage. Flat-container API lists 0.1.0.
+- **CocoaPods** — https://cocoapods.org/pods/AtwrTools
+  pod trunk info reports AtwrTools 0.1.0. First trunk push returned HTTP 500 after create; retry said duplicate. cocoapods.org/pods/AtwrTools HTTP 200.
 - **LuaRocks** — https://luarocks.org/modules/bbwdadfg/aitextwatermarkremover-tools
   luarocks upload 0.1.0-1 succeeded; rockspec HTTP 200 at https://luarocks.org/manifests/bbwdadfg/aitextwatermarkremover-tools-0.1.0-1.rockspec.
 - **GitLab Package Registry** — https://gitlab.com/baiwei.chu/aitextwatermarkremover-tools/-/packages
@@ -60,8 +62,6 @@ The artifact is an offline helper for scanning/removing invisible Unicode charac
   No local docker CLI. Hub repository create with the stored PAT as Bearer returned 401 requiring a Hub /v2/auth/token session. Registry image push was not completed.
 - **JSR**
   TypeScript module and jsr.json are in the repo. Keychain jsr-token is missing. First publish also needs jsr.io scope/package approval.
-- **CocoaPods** — https://github.com/bbwdadfg/aitextwatermarkremover-tools/actions/runs/32029910900
-  pod spec lint succeeded on GitHub Actions macos-latest. trunk.cocoapods.org returned HTTP 500 internal server error. Retry queued as run 32030231151.
 - **CPAN/MetaCPAN**
   Local Perl tests passed and a source tarball was built. cpan-upload to PAUSE returned 401 Unauthorized with stored cpan-user/cpan-token.
 - **Hackage**
@@ -71,9 +71,5 @@ The artifact is an offline helper for scanning/removing invisible Unicode charac
 
 - **Hex.pm/HexDocs**
   User-provided Hex.pm notice says account bbwdadfg and its sole-owner packages were removed for spam; do not retry, create an alternate account, or republish there.
-
-## Not applicable
-
-- none
 
 No credentials were written to the repository or this record.

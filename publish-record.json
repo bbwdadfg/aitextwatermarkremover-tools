@@ -132,9 +132,9 @@
     },
     {
       "platform": "CocoaPods",
-      "status": "blocked_review",
-      "url": "https://github.com/bbwdadfg/aitextwatermarkremover-tools/actions/runs/32029910900",
-      "evidence": "pod spec lint succeeded on GitHub Actions macos-latest. trunk.cocoapods.org returned HTTP 500 internal server error. Retry queued as run 32030231151."
+      "status": "verified",
+      "url": "https://cocoapods.org/pods/AtwrTools",
+      "evidence": "pod trunk info reports AtwrTools 0.1.0. First trunk push returned HTTP 500 after create; retry said duplicate. cocoapods.org/pods/AtwrTools HTTP 200."
     },
     {
       "platform": "Swift Package Registry",
